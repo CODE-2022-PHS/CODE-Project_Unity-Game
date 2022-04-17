@@ -50,6 +50,10 @@ public class GhoulAI : MonoBehaviour
         {
             Patrolling();
         }
+        if(!playerInSightRange && playerInAttackRange)
+        {
+            Patrolling();
+        }
         if(playerInSightRange && !playerInAttackRange)
         {
             ChasePlayer();
