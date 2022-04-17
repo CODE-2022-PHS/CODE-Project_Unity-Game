@@ -10,7 +10,7 @@ public class GhoulAI : MonoBehaviour
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
     public float health;
-
+    
     //Patrolling Variables
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -21,7 +21,8 @@ public class GhoulAI : MonoBehaviour
     bool alreadyAttacked;
 
     //AI States
-    public float sightRange, attackRange;
+    public float attackRange;
+    //bool sightRange;
     public bool playerInSightRange, playerInAttackRange;
 
     private void Awake()
@@ -34,16 +35,18 @@ public class GhoulAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        sightRange = GetComponent<FieldOfView>().canSeePlayer;
     }*/
 
     // Update is called once per frame
     void Update()
     {
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        //playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        playerInSightRange = GetComponent<FieldOfView>().canSeePlayer;
+        //playerInAttackRange = attackRange.canSeePlayer;
 
-        if(!playerInSightRange && !playerInAttackRange)
+        if (!playerInSightRange && !playerInAttackRange)
         {
             Patrolling();
         }
@@ -100,7 +103,9 @@ public class GhoulAI : MonoBehaviour
         //Enemy will stop moving when attacking
         agent.SetDestination(transform.position);
 
-        transform.LookAt(player);
+        //transform.LookAt(player);
+        LookAtPlayer();
+        
 
         if(!alreadyAttacked)
         {
@@ -110,6 +115,12 @@ public class GhoulAI : MonoBehaviour
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
+    }
+    private void LookAtPlayer()
+    {
+        Vector3 direction = (player.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 25f);
     }
 
     private void ResetAttack()
@@ -131,12 +142,13 @@ public class GhoulAI : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
+    
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, sightRange);
+        //Gizmos.color = Color.yellow;
+        //Gizmos.DrawWireSphere(transform.position, sightRange);
     }
+    
 }
