@@ -11,20 +11,25 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] Transform playerCamera = null;
+    [SerializeField] Transform playerCamera;
     [SerializeField] float mouseSensitivity = 3.5f;
     [SerializeField] float walkSpeed = 6.0f;
     [SerializeField] float gravity = -13.0f;
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
     [SerializeField] float jumpForce = 50.0f;
-    [SerializeField] bool lockCursor = true;
+    //[SerializeField] bool lockCursor = true;
     [SerializeField] float runSpeed = 45.0f;
+    //[SerializeField] Transform playerBody;
 
     float cameraPitch = 0.0f;
     float velocityY = 0.0f;
     float currSpeed = 0.0f;
-    CharacterController controller = null;
+    public CharacterController controller = null;
+
+    //private float clampDegreeUp = 75;
+    //private float clampDegreeDown = -90f;
+    //float xRotation;
 
     Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
@@ -36,11 +41,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        if (lockCursor)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;    
     }
 
     // Update is called once per frame
@@ -52,6 +54,7 @@ public class PlayerController : MonoBehaviour
 
     void UpdateMouseLook()
     {
+        
         Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
@@ -61,6 +64,9 @@ public class PlayerController : MonoBehaviour
 
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
         transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        
+
+
     }
 
     void UpdateMovement()
