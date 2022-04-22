@@ -10,6 +10,8 @@ public class GhoulAI : MonoBehaviour
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
     public float health;
+
+    //float runSpeed;
     
     //Patrolling Variables
     public Vector3 walkPoint;
@@ -28,6 +30,7 @@ public class GhoulAI : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
+
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -48,14 +51,17 @@ public class GhoulAI : MonoBehaviour
 
         if (!playerInSightRange && !playerInAttackRange)
         {
+            agent.speed = 3.5f;
             Patrolling();
         }
         if(!playerInSightRange && playerInAttackRange)
         {
+            agent.speed = 3.5f;
             Patrolling();
         }
         if(playerInSightRange && !playerInAttackRange)
         {
+            agent.speed = 10;
             ChasePlayer();
         }
         if(playerInSightRange && playerInAttackRange)
