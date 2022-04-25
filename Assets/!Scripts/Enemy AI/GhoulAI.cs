@@ -10,6 +10,7 @@ public class GhoulAI : MonoBehaviour
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
     public float health;
+    public GameObject ghoul;
 
     //float runSpeed;
     
@@ -120,7 +121,10 @@ public class GhoulAI : MonoBehaviour
         if(!alreadyAttacked)
         {
             //Attack code
-
+            if(GetComponent<Animation>().IsPlaying("Attack1"))
+            {
+                player.GetComponent<PlayerHealth>().Damage(5);
+            }
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);

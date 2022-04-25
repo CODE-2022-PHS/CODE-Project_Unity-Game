@@ -15,9 +15,13 @@ public class GhoulAnimation : MonoBehaviour
 
     //[SerializeField] float transition = 0.5f; 
 
+    public bool canSee;
+    public bool canAttack;
+
     void Start()
     {
-        
+        canSee = GetComponent<GhoulAI>().playerInSightRange;
+        canAttack = GetComponent<GhoulAI>().playerInAttackRange;
     }
 
     // Update is called once per frame
