@@ -742,11 +742,11 @@ MonoBehaviour:
   playerCamera: {fileID: 586975067}
   mouseSensitivity: 3
   walkSpeed: 135
-  gravity: -196
+  gravity: -588.6
   moveSmoothTime: 0.1
   mouseSmoothTime: 0.03
-  jumpForce: 65.33
-  runSpeed: 200
+  jumpForce: 175
+  runSpeed: 90
   controller: {fileID: 342322099}
 --- !u!143 &342322099
 CharacterController:
