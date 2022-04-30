@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/!Main Scene/TutorialScene.unity
     guid: 62ec786ee2e5d7d4bb77f386a7faae9e
   - enabled: 1
-    path: Assets/!Main Scene/OpenWorld1.unity
+    path: Assets/!Main Scene/TestOpenWorld1.unity
     guid: a245e2914ef1f7545b616ac9a6d9b99e
   m_configObjects: {}

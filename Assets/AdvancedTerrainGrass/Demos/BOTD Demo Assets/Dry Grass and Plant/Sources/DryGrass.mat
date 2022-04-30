@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: DryGrass
   m_Shader: {fileID: 4800000, guid: d42a44d830afa4156aca2c58a5dd02f7, type: 3}
-  m_ShaderKeywords: _MIXMODE_SOFTMERGE _NORMAL
+  m_ShaderKeywords: _MIXMODE_SOFTMERGE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -43,7 +43,7 @@ Material:
     - _Layers: 1
     - _MixMode: 2
     - _NormalBend: 1
-    - _SampleNormal: 1
+    - _SampleNormal: 0
     - _SamplePivot: 0
     - _ScaleMode: 0
     - _SizeThreshold: 0.5
@@ -52,8 +52,8 @@ Material:
     - _WindLOD: 0
     m_Colors:
     - _DebugColor: {r: 1, g: 0, b: 0, a: 1}
-    - _DryColor: {r: 0.72404844, g: 0.7941176, b: 0.7738217, a: 1}
-    - _HealthyColor: {r: 0.9117647, g: 0.9117647, b: 0.9117647, a: 1}
-    - _MinMaxScales: {r: 0.8, g: 1.4285715, b: 0, a: 0}
+    - _DryColor: {r: 0.8039216, g: 0.7372549, b: 0.101960786, a: 1}
+    - _HealthyColor: {r: 0.2627451, g: 0.9764706, b: 0.16470589, a: 1}
+    - _MinMaxScales: {r: 0.2, g: 3.3333333, b: 0, a: 0}
     - _WindMultiplier: {r: 0.4, g: 0.2, b: 0, a: 0}
   m_BuildTextureStacks: []
