@@ -41,8 +41,8 @@ Material:
     - _WindLOD: 0
     m_Colors:
     - _DebugColor: {r: 1, g: 0, b: 0, a: 1}
-    - _DryColor: {r: 0.5754717, g: 0.56753147, b: 0.49186543, a: 1}
-    - _HealthyColor: {r: 0.54358643, g: 0.6886792, b: 0.5236561, a: 1}
+    - _DryColor: {r: 0.8039216, g: 0.7372549, b: 0.101960786, a: 1}
+    - _HealthyColor: {r: 0.2627451, g: 0.9764706, b: 0.16470589, a: 1}
     - _MinMaxScales: {r: 0.2, g: 3.3333333, b: 0, a: 0}
     - _WindMultiplier: {r: 1, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
