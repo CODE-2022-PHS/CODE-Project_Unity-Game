@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 182639231112516982, guid: 2e52fc38ed8394b6b91aa45d1239ec98, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e52fc38ed8394b6b91aa45d1239ec98, type: 3}
 --- !u!1 &702285938
@@ -245,7 +249,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702285938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 158.3, y: 1, z: 28.5}
+  m_LocalPosition: {x: 158.3, y: 13.39, z: 28.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -406,6 +410,10 @@ PrefabInstance:
     - target: {fileID: 438060, guid: eaf383cb55cf38f448529df28e28abba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18220932, guid: eaf383cb55cf38f448529df28e28abba, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaf383cb55cf38f448529df28e28abba, type: 3}
@@ -689,7 +697,7 @@ MonoBehaviour:
   IngnoreOcclusion: 1
   showGrid: 0
   ProjMat: {fileID: 0}
-  ATGSeed: 3308718854
+  ATGSeed: 176353630
   ter: {fileID: 2048825950}
   terData: {fileID: 15600000, guid: 578fae3ec41b970409b3856a941fd85e, type: 2}
   SavedTerrainData: {fileID: 0}
