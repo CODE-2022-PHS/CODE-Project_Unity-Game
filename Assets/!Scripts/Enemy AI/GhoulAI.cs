@@ -123,7 +123,7 @@ public class GhoulAI : MonoBehaviour
             //Attack code
             if(GetComponent<Animation>().IsPlaying("Attack1"))
             {
-                player.GetComponent<PlayerHealth>().Damage(5);
+                player.GetComponent<PlayerHealth>().Damage(10);
             }
 
             alreadyAttacked = true;
