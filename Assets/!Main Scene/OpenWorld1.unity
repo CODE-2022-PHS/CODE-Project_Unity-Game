@@ -1724,7 +1724,7 @@ MonoBehaviour:
   IngnoreOcclusion: 1
   showGrid: 0
   ProjMat: {fileID: 0}
-  ATGSeed: 176353630
+  ATGSeed: 262314696
   ter: {fileID: 2048825950}
   terData: {fileID: 15600000, guid: 578fae3ec41b970409b3856a941fd85e, type: 2}
   SavedTerrainData: {fileID: 0}
@@ -1737,7 +1737,7 @@ MonoBehaviour:
   CameraLayer: 0
   CullDistance: 100
   FadeLength: 20
-  CacheDistance: 120.00001
+  CacheDistance: 507.8125
   DetailFadeStart: 20
   DetailFadeLength: 30
   ShadowStart: 10
