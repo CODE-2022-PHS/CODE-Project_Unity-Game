@@ -56,7 +56,7 @@ public class PlayerManager : MonoBehaviour {
 
 	void Update ()
 	{	
-		if (Input.GetKeyDown(KeyCode.E) && CanSwitch)
+		/*if (Input.GetKeyDown(KeyCode.E) && CanSwitch)
 		{
 			isSwitching = true;
 			nextWeapon = nearWeapon;
@@ -83,12 +83,12 @@ public class PlayerManager : MonoBehaviour {
 			ChangeArms (4);
 
 		if (Input.GetKeyDown ("6"))
-			ChangeArms (5);
+			ChangeArms (5);*/
 	}
 
 	int curArms = 0;
 
-	void ChangeArms (int value)
+	/*void ChangeArms (int value)
 	{
 		if (value == curArms)
 			return;
@@ -105,7 +105,7 @@ public class PlayerManager : MonoBehaviour {
 		//		curSkin = 0;
 
 		onUpdateArmsPrefab ();
-	}
+	}*/
 
 	//	bool adjustSightOn = false;
 	//	Vector3 target;
