@@ -6455,6 +6455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BowArms: {fileID: 1136347085014417}
   MeleeArms: {fileID: 4954833884746326037}
+  timeToSwitch: 0
 --- !u!205 &205491578966492717
 LODGroup:
   m_ObjectHideFlags: 0

@@ -357,151 +357,90 @@ public class BowControlLegacy : WeaponsBaseLegacy
 
 
 	IEnumerator FireOneShot()
-
 	{
-
 		Vector3 position = mountPoint.position;
-
-
-
 		// set the gun's info into an array to send to the bullet
-
 		MissileInfo info = new MissileInfo();
-
 		info.damage = damage;
-
 		info.impactForce = impactForce;
-
 		info.maxPenetration = maxPenetration;
-
 		info.maxspread = maxSpread;
-
 		info.speed = arrowSpeed;
-
 		info.position = this.transform.root.position;
-
 		info.lifeTime = range;
 
-
-
 		Quaternion q = Quaternion.Euler (new Vector3 (0, transform.eulerAngles.y - 90f, -transform.eulerAngles.x));
-
-
-
 		GameObject newArrow = Instantiate (arrow, position, q) as GameObject;
 
 		newArrow.GetComponent<Missile>().SetUp(info);
-
-//		newArrow.transform.RotateAround (newArrow.transform.position, newArrow.transform.right, 90f);
-
 		newArrow.transform.RotateAround (newArrow.transform.position, newArrow.transform.forward, 90f);
 
 		Source.clip = FireSound;
-
 		Source.spread = Random.Range (1.0f, 1.5f);
-
 		Source.Play();
 
-
-
 		yield return null;
-
 	}
 
 
 
 	void EmptySlot (bool value)
-
 	{
-
-		if (value) 
-
+		if(value)
+        {
 			attachedArrow.SetActive (false);
-
+        }
 		else
-
+        {
 			attachedArrow.SetActive (true);
-
+        }
 	}
 
-
-
-	IEnumerator LoadArrow ()
-
+	IEnumerator LoadArrow()
 	{
-
 		PlayWeaponAnimation (weaponAnimations.Weapon_IdleToADS.name);
-
 		yield return StartCoroutine (WaitAnimationFinish (weaponAnimations.Weapon_IdleToADS));
-
 		isLoaded = true;
-
 	}
 
 
 
 	public override IEnumerator ReloadNormal()
-
 	{
-
 		PlayWeaponAnimation (weaponAnimations.Weapon_Reload.name, WrapMode.Once);
-
 		EmptySlot (false);
-
 		yield return StartCoroutine (WaitAnimationFinish (weaponAnimations.Weapon_Reload));
-
 		isReloading = false;
-
 		canAim = true;
-
 		canFire = true;
-
 	}
 
 
 
 	public override void DisableWeapon()
-
 	{
-
 		canAim = false;
-
 		isReloading = false;
-
 		attachedArrow.SetActive (false);
-
 		base.DisableWeapon ();
-
 	}
 
 
 
 	public bool CanReload
-
 	{
-
 		get
-
 		{
-
 			if (!isReloading) 
-
 			{
-
 				if (controller.IsWalking() || controller.IsQuiet())
-
+                {
 					return true;
-
-
-
+                }
 				return false;
-
 			}
-
 			return false;
-
 		}
-
 	}
 
 		
