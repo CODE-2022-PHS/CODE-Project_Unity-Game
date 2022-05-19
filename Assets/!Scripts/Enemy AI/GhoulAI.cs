@@ -10,7 +10,7 @@ public class GhoulAI : MonoBehaviour
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
     public float health;
-    public GameObject ghoul;
+    //public GameObject ghoul;
 
     //float runSpeed;
     
