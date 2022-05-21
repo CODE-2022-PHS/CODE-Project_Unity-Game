@@ -33,20 +33,23 @@ public class GhoulAnimation : MonoBehaviour
             transition = initialTransition;
         }*/
 
-        if(GetComponent<GhoulAI>().playerInSightRange && GetComponent<GhoulAI>().playerInAttackRange)
+        if(GetComponent<GhoulAI>().health > 0)
         {
-            //transition--;
-            GetComponent<Animation>().Play(attack);
-        }
-        if(GetComponent<GhoulAI>().playerInSightRange && !GetComponent<GhoulAI>().playerInAttackRange)
-        {
-            //transition--;
-            GetComponent<Animation>().Play(run);
-        }
-        if(!GetComponent<GhoulAI>().playerInSightRange && !GetComponent<GhoulAI>().playerInAttackRange)
-        {
-            //transition--;
-            GetComponent<Animation>().Play(walk);
+            if(GetComponent<GhoulAI>().playerInSightRange && GetComponent<GhoulAI>().playerInAttackRange)
+            {
+                //transition--;
+                GetComponent<Animation>().Play(attack);
+            }
+            if(GetComponent<GhoulAI>().playerInSightRange && !GetComponent<GhoulAI>().playerInAttackRange)
+            {
+                //transition--;
+                GetComponent<Animation>().Play(run);
+            }
+            if(!GetComponent<GhoulAI>().playerInSightRange && !GetComponent<GhoulAI>().playerInAttackRange)
+            {
+                //transition--;
+                GetComponent<Animation>().Play(walk);
+            }
         }
         if(GetComponent<GhoulAI>().health == 0)
         {
