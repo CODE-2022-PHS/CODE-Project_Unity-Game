@@ -118,7 +118,7 @@ public class Missile : MonoBehaviour
 
 		switch (hit.transform.tag) // decide what the bullet collided with and what to do with it
 		{
-			case "Concrete":
+			case "Environment(Wall, Ground, etc.)":
 				hitCount += 2; // add 2 hits to counter... concrete is hard
 				type = HitType.CONCRETE;
 				if (hitCount >= maxHits)

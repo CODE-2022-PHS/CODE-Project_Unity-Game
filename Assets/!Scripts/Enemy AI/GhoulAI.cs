@@ -22,6 +22,7 @@ public class GhoulAI : MonoBehaviour
     //Attacking Variables
     public float timeBetweenAttacks;
     bool alreadyAttacked;
+    public bool isAttacking = false;
 
     //AI States
     public float attackRange;
@@ -109,7 +110,7 @@ public class GhoulAI : MonoBehaviour
         agent.SetDestination(player.position);
     }
 
-    private void AttackPlayer()
+    public void AttackPlayer()
     {
         //Enemy will stop moving when attacking
         agent.SetDestination(transform.position);
@@ -123,7 +124,8 @@ public class GhoulAI : MonoBehaviour
             //Attack code
             if(GetComponent<Animation>().IsPlaying("Attack1"))
             {
-                player.GetComponent<PlayerHealth>().Damage(10);
+                //player.GetComponent<PlayerHealth>().Damage(10);
+                isAttacking = true;
             }
 
             alreadyAttacked = true;
