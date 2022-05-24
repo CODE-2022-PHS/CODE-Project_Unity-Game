@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 136614995598757014}
   m_Layer: 0
   m_Name: PF Conifer Small BOTD
-  m_TagString: Untagged
+  m_TagString: Environment(Wall, Ground, etc.)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -373,6 +373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: car_6_black
       objectReference: {fileID: 0}
+    - target: {fileID: 5285174987729393547, guid: 788f99c0acce4384a91a6c213fb34068, type: 3}
+      propertyPath: m_TagString
+      value: Environment(Wall, Ground, etc.)
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5285174987729393548, guid: 788f99c0acce4384a91a6c213fb34068, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 788f99c0acce4384a91a6c213fb34068, type: 3}
@@ -2104,7 +2108,7 @@ GameObject:
   - component: {fileID: 1484053610}
   m_Layer: 0
   m_Name: Security Fence 1
-  m_TagString: Untagged
+  m_TagString: Environment(Wall, Ground, etc.)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2408,7 +2412,7 @@ GameObject:
   - component: {fileID: 1566403749}
   m_Layer: 0
   m_Name: SmallBuilding1
-  m_TagString: Untagged
+  m_TagString: Environment(Wall, Ground, etc.)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2992,7 +2996,7 @@ GameObject:
   - component: {fileID: 2048825952}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Environment(Wall, Ground, etc.)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
