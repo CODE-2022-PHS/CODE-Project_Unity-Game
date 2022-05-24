@@ -150,6 +150,7 @@ public class GhoulAI : MonoBehaviour
 
         if(health <= 0)
         {
+            agent.SetDestination(transform.position);
             Invoke(nameof(DestroyEnemy), 1f);
         }
     }

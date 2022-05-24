@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4795125245613744}
   - component: {fileID: 114545765145665788}
+  - component: {fileID: 654634344017129300}
+  - component: {fileID: 754729842595622606}
   m_Layer: 0
   m_Name: Arrow-1_hit_prefab
   m_TagString: Untagged
@@ -45,7 +47,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b736b6957234b018731883fe8bd2c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyAfter: 15
+  destroyAfter: 0.5
+--- !u!65 &654634344017129300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000165509763570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.089894705, y: 0.94538355, z: 0.06685938}
+  m_Center: {x: 0.0063413866, y: 0.3703074, z: -0.0025903285}
+--- !u!114 &754729842595622606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000165509763570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a523ce1af05e40d4b84f645181213d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowDamage: 100
 --- !u!1 &1326758802848370
 GameObject:
   m_ObjectHideFlags: 0

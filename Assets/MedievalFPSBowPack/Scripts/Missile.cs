@@ -124,6 +124,12 @@ public class Missile : MonoBehaviour
 				if (hitCount >= maxHits)
 					StickToTheWall (hit, hit.transform.gameObject);
 				break;
+			case "Enemy":
+				hitCount += 2; // add 2 hits to counter... concrete is hard
+				type = HitType.CONCRETE;
+				if (hitCount >= maxHits)
+					StickToTheWall(hit, hit.transform.gameObject);
+				break;
 			case "Generic" :
 				hitCount++;
 				type = HitType.GENERIC;
