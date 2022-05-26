@@ -51,8 +51,9 @@ public class GhoulAnimation : MonoBehaviour
                 GetComponent<Animation>().Play(walk);
             }
         }
-        if(GetComponent<GhoulAI>().health == 0)
+        else if(GetComponent<GhoulAI>().health <= 0)
         {
+            GetComponent<GhoulAI>().agent.SetDestination(transform.position);
             GetComponent<Animation>().Play(death);
         }
     }
