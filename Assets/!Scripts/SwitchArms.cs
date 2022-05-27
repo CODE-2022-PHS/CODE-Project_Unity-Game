@@ -6,6 +6,9 @@ public class SwitchArms : MonoBehaviour
 {
     public GameObject BowArms;
     public GameObject MeleeArms;
+    public GameObject Crosshair;
+    public GameObject BowCrosshair;
+
     public BowControlLegacy bowTime;
 
     float countDown;
@@ -33,14 +36,22 @@ public class SwitchArms : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Alpha1) && countDown == 0f)
         {
             BowArms.SetActive(false);
+            BowCrosshair.SetActive(false);
+
             MeleeArms.SetActive(true);
-            //countDown = timeToSwitch;
+            Crosshair.SetActive(true);
+
+            countDown = .5f;
         }
         if(Input.GetKeyDown(KeyCode.Alpha2) && countDown == 0f)
         {
             MeleeArms.SetActive(false);
+            Crosshair.SetActive(false);
+
             BowArms.SetActive(true);
-            //countDown = timeToSwitch;
+            BowCrosshair.SetActive(true);
+
+            countDown = .5f;
         }
     }
 }

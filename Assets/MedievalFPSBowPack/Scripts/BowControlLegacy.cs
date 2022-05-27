@@ -19,7 +19,7 @@ public class BowControlLegacy : WeaponsBaseLegacy
 	public float defaultFov;
 	public float currentFov;
 
-	[HideInInspector] public float baseSpread = .5f;  
+	[HideInInspector] public float baseSpread = .25f;  
 
 	public float maxSpread = 1.0f; 
 	private float defaultSpread;
