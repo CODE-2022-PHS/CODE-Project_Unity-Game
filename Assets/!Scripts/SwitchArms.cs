@@ -10,7 +10,7 @@ public class SwitchArms : MonoBehaviour
     public GameObject BowCrosshair;
     public GameObject SwordImage;
     public GameObject BowImage;
-
+    public GameObject ArrowNumber;
 
     public BowControlLegacy bowTime;
 
@@ -41,6 +41,7 @@ public class SwitchArms : MonoBehaviour
             BowArms.SetActive(false);
             BowCrosshair.SetActive(false);
             BowImage.SetActive(false);
+            ArrowNumber.SetActive(false);
 
             MeleeArms.SetActive(true);
             Crosshair.SetActive(true);
@@ -57,6 +58,7 @@ public class SwitchArms : MonoBehaviour
             BowArms.SetActive(true);
             BowCrosshair.SetActive(true);
             BowImage.SetActive(true);
+            ArrowNumber.SetActive(true);
 
             countDown = .5f;
         }

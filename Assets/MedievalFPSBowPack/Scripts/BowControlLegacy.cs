@@ -19,8 +19,9 @@ public class BowControlLegacy : WeaponsBaseLegacy
 	public float defaultFov;
 	public float currentFov;
 
-	[HideInInspector] public float baseSpread = .25f;  
+	[HideInInspector] public float baseSpread = .25f;
 
+	public UIArrow canUse;
 	public float maxSpread = 1.0f; 
 	private float defaultSpread;
 	private float defaultMaxSpread;
@@ -55,11 +56,20 @@ public class BowControlLegacy : WeaponsBaseLegacy
 	{
 		base.Start ();
 		defaultFov = Camera.main.fieldOfView;
+		
 		canAim = true;
 	}
 
 	protected override void InputUpdate()
 	{
+		if(canUse.canUseBow == false)
+        {
+			canAim = false;
+        }
+		else if(canUse.canUseBow == true)
+        {
+			canAim = true;
+        }
 		if (Input.GetMouseButton (1) && CanAim)
 		{
 			isAimed = true;
@@ -73,6 +83,7 @@ public class BowControlLegacy : WeaponsBaseLegacy
 			if (Input.GetMouseButtonDown (0) && CanFire && isLoaded)
 			{
 				isFiring = true;
+				canUse.arrows--;
 				StartCoroutine (Fire ());  
 			}
 		}
