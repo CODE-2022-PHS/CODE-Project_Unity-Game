@@ -8,6 +8,9 @@ public class SwitchArms : MonoBehaviour
     public GameObject MeleeArms;
     public GameObject Crosshair;
     public GameObject BowCrosshair;
+    public GameObject SwordImage;
+    public GameObject BowImage;
+
 
     public BowControlLegacy bowTime;
 
@@ -37,9 +40,11 @@ public class SwitchArms : MonoBehaviour
         {
             BowArms.SetActive(false);
             BowCrosshair.SetActive(false);
+            BowImage.SetActive(false);
 
             MeleeArms.SetActive(true);
             Crosshair.SetActive(true);
+            SwordImage.SetActive(true);
 
             countDown = .5f;
         }
@@ -47,9 +52,11 @@ public class SwitchArms : MonoBehaviour
         {
             MeleeArms.SetActive(false);
             Crosshair.SetActive(false);
+            SwordImage.SetActive(false);
 
             BowArms.SetActive(true);
             BowCrosshair.SetActive(true);
+            BowImage.SetActive(true);
 
             countDown = .5f;
         }
