@@ -493,6 +493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 486749495}
+  bowCam: {fileID: 486749495}
+  meleeCam: {fileID: 892314735}
   mouseSensitivity: 3.5
   walkSpeed: 6
   gravity: -13
@@ -4327,6 +4329,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 172670722}
+  bowCam: {fileID: 0}
+  meleeCam: {fileID: 0}
   mouseSensitivity: 3.5
   walkSpeed: 18
   gravity: -19.6
