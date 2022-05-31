@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Environment(Wall, Ground, etc.)
+  - Interactable
   layers:
   - Default
   - TransparentFX
