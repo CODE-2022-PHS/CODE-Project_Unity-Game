@@ -821,7 +821,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257047949}
   m_LocalRotation: {x: -0, y: 0.9088485, z: -0, w: 0.41712642}
-  m_LocalPosition: {x: 14.87, y: 6.83, z: 138.08}
+  m_LocalPosition: {x: 13.98, y: 6.83, z: 137.05}
   m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -835,6 +835,51 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257047949}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 125, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &290207474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290207475}
+  - component: {fileID: 290207476}
+  m_Layer: 7
+  m_Name: Forest Collider (10)
+  m_TagString: Environment(Wall, Ground, etc.)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &290207475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290207474}
+  m_LocalRotation: {x: -0, y: 0.9550426, z: -0, w: 0.29646853}
+  m_LocalPosition: {x: 84.1, y: 6.83, z: 174.89}
+  m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889343143}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 145.509, z: 0}
+--- !u!65 &290207476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290207474}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -1202,7 +1247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456543007}
   m_LocalRotation: {x: -0, y: 0.6606204, z: -0, w: 0.7507202}
-  m_LocalPosition: {x: 4, y: 6.83, z: 42.7}
+  m_LocalPosition: {x: 4.1, y: 6.83, z: 42.1}
   m_LocalScale: {x: 1, y: 0.27637, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1387,6 +1432,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8377b28f368c45d4199bae71a2a5eabc, type: 3}
   m_PrefabInstance: {fileID: 481693774}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &520351610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520351611}
+  - component: {fileID: 520351612}
+  m_Layer: 7
+  m_Name: Forest Collider (9)
+  m_TagString: Environment(Wall, Ground, etc.)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &520351611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520351610}
+  m_LocalRotation: {x: -0, y: 0.9922564, z: -0, w: 0.12420664}
+  m_LocalPosition: {x: 46.94, y: 6.83, z: 157.81}
+  m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889343143}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 165.73, z: 0}
+--- !u!65 &520351612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520351610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 125, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &520403175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 187744, guid: cfe3a621ddd7aee4cb64ee0caa431e12, type: 3}
@@ -1799,6 +1889,51 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.090246, y: 0.027975589, z: 3.5158236}
   m_Center: {x: 2.5379295, y: -0.0005062506, z: 0.013835152}
+--- !u!1 &793370119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793370120}
+  - component: {fileID: 793370121}
+  m_Layer: 7
+  m_Name: Forest Collider (14)
+  m_TagString: Environment(Wall, Ground, etc.)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793370120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793370119}
+  m_LocalRotation: {x: -0, y: 0.8737752, z: -0, w: 0.48633006}
+  m_LocalPosition: {x: 49.9, y: 6.83, z: 260.9}
+  m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889343143}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 121.801, z: 0}
+--- !u!65 &793370121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793370119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 125, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &799955949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ce73a35450ff20d4ab05c1f0c3cec2dc, type: 3}
@@ -1992,7 +2127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906966021}
   m_LocalRotation: {x: -0, y: 0.300392, z: -0, w: 0.9538159}
-  m_LocalPosition: {x: 35.970535, y: -43.28157, z: 311.57837}
+  m_LocalPosition: {x: 26.1, y: -43.28157, z: 297.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2109,6 +2244,51 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 150, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &987802554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987802555}
+  - component: {fileID: 987802556}
+  m_Layer: 7
+  m_Name: Forest Collider (16)
+  m_TagString: Environment(Wall, Ground, etc.)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &987802555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987802554}
+  m_LocalRotation: {x: -0, y: 0.6080367, z: -0, w: 0.79390895}
+  m_LocalPosition: {x: 39.7, y: 6.83, z: 208.3}
+  m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889343143}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 74.895, z: 0}
+--- !u!65 &987802556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987802554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 75, y: 100, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1016025533 stripped
 GameObject:
@@ -3083,8 +3263,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
+      propertyPath: gravity
+      value: -53.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
+      propertyPath: runSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: jumpForce
-      value: 15
+      value: 17.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
+      propertyPath: walkSpeed
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7044787288311157603, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: BowImage
@@ -3268,6 +3460,51 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244619353}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 75, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1266315184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266315185}
+  - component: {fileID: 1266315186}
+  m_Layer: 7
+  m_Name: Forest Collider (15)
+  m_TagString: Environment(Wall, Ground, etc.)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1266315185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266315184}
+  m_LocalRotation: {x: -0, y: 0.75119823, z: -0, w: 0.6600767}
+  m_LocalPosition: {x: 37.88, y: 6.83, z: 231.69}
+  m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889343143}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 97.389, z: 0}
+--- !u!65 &1266315186
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266315184}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -3676,7 +3913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394491024}
   m_LocalRotation: {x: -0, y: 0.021676378, z: -0, w: 0.9997651}
-  m_LocalPosition: {x: 33.7, y: 6.83, z: 119.2}
+  m_LocalPosition: {x: 32.23, y: 6.83, z: 119.26}
   m_LocalScale: {x: 0.5133538, y: 0.27637, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3805,6 +4042,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ca37b12a14be5249a2baeea950df0e4, type: 3}
+--- !u!1 &1467936433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1467936434}
+  - component: {fileID: 1467936435}
+  m_Layer: 7
+  m_Name: Forest Collider (12)
+  m_TagString: Environment(Wall, Ground, etc.)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1467936434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467936433}
+  m_LocalRotation: {x: -0, y: 0.8404803, z: -0, w: 0.54184216}
+  m_LocalPosition: {x: 96.1, y: 6.83, z: 240.7}
+  m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889343143}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 114.382, z: 0}
+--- !u!65 &1467936435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467936433}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 325, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1470343095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: e8509d0bc33ac9c4088232205ccc9352, type: 3}
@@ -3978,7 +4260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2714560545736756631, guid: 9a09964170d29f74eabbd5309983755a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a09964170d29f74eabbd5309983755a, type: 3}
@@ -4322,6 +4604,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1576122309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1576122310}
+  - component: {fileID: 1576122311}
+  m_Layer: 7
+  m_Name: Forest Collider (11)
+  m_TagString: Environment(Wall, Ground, etc.)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1576122310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576122309}
+  m_LocalRotation: {x: -0, y: 0.8404803, z: -0, w: 0.54184216}
+  m_LocalPosition: {x: 114.4, y: 6.83, z: 225.4}
+  m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889343143}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 114.382, z: 0}
+--- !u!65 &1576122311
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576122309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 325, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1635969557
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,6 +5150,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7044787288311157605, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
   m_PrefabInstance: {fileID: 1224016179}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1848070178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1848070179}
+  - component: {fileID: 1848070180}
+  m_Layer: 7
+  m_Name: Forest Collider (17)
+  m_TagString: Environment(Wall, Ground, etc.)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1848070179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848070178}
+  m_LocalRotation: {x: -0, y: 0.12526383, z: -0, w: 0.9921235}
+  m_LocalPosition: {x: 58.7, y: 6.83, z: 198}
+  m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889343143}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 14.392, z: 0}
+--- !u!136 &1848070180
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848070178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 18
+  m_Height: 356.7
+  m_Direction: 1
+  m_Center: {x: 0, y: 17.181396, z: 0}
 --- !u!1 &1865541733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: e8509d0bc33ac9c4088232205ccc9352, type: 3}
@@ -4994,6 +5367,15 @@ Transform:
   - {fileID: 211401255}
   - {fileID: 1394491025}
   - {fileID: 257047950}
+  - {fileID: 520351611}
+  - {fileID: 290207475}
+  - {fileID: 1576122310}
+  - {fileID: 1467936434}
+  - {fileID: 2075864461}
+  - {fileID: 793370120}
+  - {fileID: 1266315185}
+  - {fileID: 987802555}
+  - {fileID: 1848070179}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5085,7 +5467,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 125, y: 100, z: 1}
+  m_Size: {x: 115, y: 100, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1940726764 stripped
 GameObject:
@@ -5522,6 +5904,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e8509d0bc33ac9c4088232205ccc9352, type: 3}
   m_PrefabInstance: {fileID: 640480481}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2075864460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2075864461}
+  - component: {fileID: 2075864462}
+  m_Layer: 7
+  m_Name: Forest Collider (13)
+  m_TagString: Environment(Wall, Ground, etc.)
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2075864461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075864460}
+  m_LocalRotation: {x: -0, y: 0.95734805, z: -0, w: 0.28893748}
+  m_LocalPosition: {x: 77.3, y: 6.83, z: 289.4}
+  m_LocalScale: {x: 0.33397555, y: 0.27637, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1889343143}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 146.411, z: 0}
+--- !u!65 &2075864462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075864460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 125, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2109795792 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 110292, guid: cfe3a621ddd7aee4cb64ee0caa431e12, type: 3}
