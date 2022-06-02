@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4462,7 +4462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: runSpeed
-      value: 12
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: jumpForce
@@ -4470,7 +4470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: walkSpeed
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7044787288311157603, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: BowImage
