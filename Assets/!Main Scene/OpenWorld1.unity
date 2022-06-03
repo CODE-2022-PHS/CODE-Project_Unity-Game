@@ -3368,6 +3368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 1771947776}
+  bowCam: {fileID: 0}
+  meleeCam: {fileID: 0}
   mouseSensitivity: 3.5
   walkSpeed: 6
   gravity: -29.4
@@ -4584,6 +4586,11 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &956752556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7044787287479094432, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
+  m_PrefabInstance: {fileID: 1224016179}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &987802554
 GameObject:
   m_ObjectHideFlags: 0
@@ -6443,9 +6450,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
+      propertyPath: bowCam
+      value: 
+      objectReference: {fileID: 1802472507}
+    - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: gravity
       value: -53.9
       objectReference: {fileID: 0}
+    - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
+      propertyPath: meleeCam
+      value: 
+      objectReference: {fileID: 956752556}
     - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: runSpeed
       value: 6
@@ -9554,6 +9569,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794631254}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1802472507 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7044787287880474104, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
+  m_PrefabInstance: {fileID: 1224016179}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1807009841 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: e8509d0bc33ac9c4088232205ccc9352, type: 3}
