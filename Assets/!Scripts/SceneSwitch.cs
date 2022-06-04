@@ -19,13 +19,20 @@ public class SceneSwitch : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        hasCollided = true;
+        if(other.tag == "Player")
+        {
+            hasCollided = true;
+        }
+        
         
     }
 
     void OnTriggerExit(Collider other)
     {
-        hasCollided = false;
+        if(other.tag == "Player")
+        {
+            hasCollided = false;
+        }
     }
 
     /*

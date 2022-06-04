@@ -7,6 +7,7 @@ public class GhoulArms : MonoBehaviour
 
     public float armDamage;
     public GhoulAI enemy;
+    public GameObject reference;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,18 +18,10 @@ public class GhoulArms : MonoBehaviour
                 other.GetComponent<PlayerHealth>().Damage(2.5f);
             }
         }
+        else if(other.tag != "Player")
+        {
+            //GetComponent<GhoulAI>().ChasePlayer();
+            reference.GetComponent<GhoulAI>().agent.SetDestination(transform.position);
+        }
     }
-
-
-    // Start is called before the first frame update
-    /*void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }*/
 }

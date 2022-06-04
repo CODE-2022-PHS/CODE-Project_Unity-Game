@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public GameObject player;
-    public static PlayerHealth use;
+    //public static PlayerHealth use;
     public Image healthBar;
-    public float currentHealth;
+    public static float currentHealth;
     float maxHealth = 100f;
     float lerpSpeed;
     //float healingPoints = .01f;
@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        lerpSpeed = 3f * Time.deltaTime;
+        lerpSpeed = 1.5f * Time.deltaTime;
 
         HealthBar();
         HealthColor();
@@ -48,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
 
         if(currentHealth <= 0)
         {
-            Destroy(player);
+            SceneManager.LoadScene("MainMenu");
         }
         
         //healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, currentHealth / maxHealth, lerpSpeed);

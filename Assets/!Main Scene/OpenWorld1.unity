@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.89
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
-    minRegionArea: 2
+    minRegionArea: 5
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.29666665
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -708,7 +708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -904,7 +904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -993,7 +993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -2130,7 +2130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -2301,7 +2301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -3071,7 +3071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -3160,7 +3160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -3249,7 +3249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -3511,7 +3511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -3932,7 +3932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -4441,7 +4441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -4883,7 +4883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -5471,7 +5471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -5560,7 +5560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -7001,7 +7001,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: walkSpeed
-      value: 8
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044787288311157602, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
+      propertyPath: moveSmoothTime
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7044787288311157603, guid: a7ffed030d1e3b344ba6b696a5720cf9, type: 3}
       propertyPath: BowImage
@@ -8205,7 +8209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -9088,7 +9092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -9465,7 +9469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -9572,7 +9576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -9667,7 +9671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -10933,7 +10937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
@@ -11539,7 +11543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: angle
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1231679117201429818, guid: 95665f27517ae31459f82ac5bb7db578, type: 3}
       propertyPath: playerRef
