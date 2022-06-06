@@ -83,7 +83,7 @@ public class BowControlLegacy : WeaponsBaseLegacy
 			if (Input.GetMouseButtonDown (0) && CanFire && isLoaded)
 			{
 				isFiring = true;
-				canUse.arrows--;
+				GlobalData.currArrows--;
 				StartCoroutine (Fire ());  
 			}
 		}

@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject player;
     //public static PlayerHealth use;
     public Image healthBar;
-    public static float currentHealth;
+    public float currentHealth;
     float maxHealth = 100f;
     float lerpSpeed;
     //float healingPoints = .01f;
@@ -17,13 +17,15 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        //currentHealth = maxHealth;
         player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
+        //maxHealth = GlobalData.maxHealth;
+        currentHealth = GlobalData.currHealth;
         if(currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
@@ -39,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(currentHealth > 0)
         {
-            currentHealth -= damagePoints;
+            GlobalData.currHealth -= damagePoints;
         }
         /*else
         {

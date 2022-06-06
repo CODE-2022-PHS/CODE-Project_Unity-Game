@@ -8,19 +8,25 @@ public class UIArrow : MonoBehaviour
     public Text arrowNum;
 
     public int arrows;
-    public int maxArrows = 6;
+    public int maxArrows;
     public bool canUseBow;
 
     // Start is called before the first frame update
     void Start()
     {
-        arrows = maxArrows;
+        //arrows = maxArrows;
         canUseBow = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        arrows = GlobalData.currArrows;
+        if(arrows > maxArrows)
+        {
+            GlobalData.currArrows = maxArrows;
+        }
+
         if(arrows < 10)
         {
             arrowNum.text = "0" + arrows;
