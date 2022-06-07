@@ -10,5 +10,7 @@ public class DataReset : MonoBehaviour
         GlobalData.currHealth = 100f;
         GlobalData.currArrows = 6;
         GlobalData.maxArrows = 6;
+        GlobalData.hasWon = false;
+        GlobalData.hasDied = false;
     }
 }

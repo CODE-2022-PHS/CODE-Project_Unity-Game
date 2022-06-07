@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/!Main Scene/OpenWorld1.unity
     guid: eae4333fb114dd64da8d796ed91b365a
+  - enabled: 1
+    path: Assets/!Main Scene/GameOver.unity
+    guid: efeb61183eba9374391f8354a1005dff
   m_configObjects: {}

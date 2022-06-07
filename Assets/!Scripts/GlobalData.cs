@@ -11,4 +11,11 @@ public class GlobalData : MonoBehaviour
     //Arrow Variables
     public static int currArrows = 6;
     public static int maxArrows = 6;
+
+    //GameOver Message Variables
+    public static bool hasDied = false;
+    public static bool hasWon = false;
+
+    //Player Settings
+    public static float sensitivity = 3.5f; 
 }

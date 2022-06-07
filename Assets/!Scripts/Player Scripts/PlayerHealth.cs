@@ -50,7 +50,8 @@ public class PlayerHealth : MonoBehaviour
 
         if(currentHealth <= 0)
         {
-            SceneManager.LoadScene("MainMenu");
+            GlobalData.hasDied = true;
+            SceneManager.LoadScene("GameOver");
         }
         
         //healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, currentHealth / maxHealth, lerpSpeed);
