@@ -24,4 +24,5 @@ public class GlobalData : MonoBehaviour
     public static bool QuiverUpgrade = false;
     public static bool foundMap = false;
     public static bool safetyKitFound = false;
+    public static bool aidKitFound = false;
 }

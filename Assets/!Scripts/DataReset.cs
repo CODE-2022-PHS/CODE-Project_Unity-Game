@@ -16,5 +16,6 @@ public class DataReset : MonoBehaviour
         GlobalData.QuiverUpgrade = false;
         GlobalData.foundMap = false;
         GlobalData.safetyKitFound = false;
+        GlobalData.aidKitFound = false;
     }
 }

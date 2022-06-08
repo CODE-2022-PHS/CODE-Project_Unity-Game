@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public GameObject player;
+    public GameObject NoticeText;
     //public static PlayerHealth use;
     public Image healthBar;
     public float currentHealth;
@@ -31,6 +32,19 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = maxHealth;
         }
         lerpSpeed = 1.5f * Time.deltaTime;
+
+        if(GlobalData.aidKitFound == true)
+        {
+            if(GlobalData.currHealth == 100)
+            {
+                NoticeText.SetActive(true);
+            }
+            else if(GlobalData.currHealth < 100)
+            {
+                GlobalData.currHealth += 25;
+                GlobalData.aidKitFound = false;
+            }
+        }
 
         HealthBar();
         HealthColor();
