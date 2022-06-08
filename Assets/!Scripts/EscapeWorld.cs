@@ -7,6 +7,9 @@ public class EscapeWorld : MonoBehaviour
 {
     public bool hasCollided = false;
     public GameObject EscapeText;
+    public GameObject ExitNotice;
+    public float countDown;
+    bool startCountdown = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,13 +29,38 @@ public class EscapeWorld : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        countDown = 5f;
+    }
+
     private void Update()
     {
         if(hasCollided && Input.GetKeyDown(KeyCode.F))
         {
-            EscapeText.SetActive(false);
-            GlobalData.hasWon = true;
-            SceneManager.LoadScene("GameOver");
+            if(GlobalData.safetyKitFound == true && GlobalData.foundMap == true)
+            {
+                EscapeText.SetActive(false);
+                GlobalData.hasWon = true;
+                SceneManager.LoadScene("GameOver");
+            }
+            else
+            {
+                startCountdown = true;
+                ExitNotice.SetActive(true);
+            }
+        }
+
+        if (startCountdown == true)
+        {
+            countDown -= Time.deltaTime;
+        }
+
+        if (countDown <= 0)
+        {
+            startCountdown = false;
+            countDown = 5f;
+            ExitNotice.SetActive(false);
         }
     }
 }

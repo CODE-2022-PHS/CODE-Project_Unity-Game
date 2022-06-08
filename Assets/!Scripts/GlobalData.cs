@@ -17,5 +17,11 @@ public class GlobalData : MonoBehaviour
     public static bool hasWon = false;
 
     //Player Settings
-    public static float sensitivity = 3.5f; 
+    public static float sensitivity = 3.5f;
+
+    //Interactable Item Variables
+    public static bool TutorialKeys = false;
+    public static bool QuiverUpgrade = false;
+    public static bool foundMap = false;
+    public static bool safetyKitFound = false;
 }

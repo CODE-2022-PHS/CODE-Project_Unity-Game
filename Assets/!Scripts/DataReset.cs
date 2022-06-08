@@ -12,5 +12,9 @@ public class DataReset : MonoBehaviour
         GlobalData.maxArrows = 6;
         GlobalData.hasWon = false;
         GlobalData.hasDied = false;
+        GlobalData.TutorialKeys = false;
+        GlobalData.QuiverUpgrade = false;
+        GlobalData.foundMap = false;
+        GlobalData.safetyKitFound = false;
     }
 }

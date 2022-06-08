@@ -11,36 +11,47 @@ public class UIArrow : MonoBehaviour
     public int maxArrows;
     public bool canUseBow;
 
+    //bool hasUpgraded = false;
+
     // Start is called before the first frame update
     void Start()
     {
         //arrows = maxArrows;
         canUseBow = true;
+        //maxArrows = GlobalData.maxArrows;
     }
 
     // Update is called once per frame
     void Update()
     {
         arrows = GlobalData.currArrows;
+        maxArrows = GlobalData.maxArrows;
         if(arrows > maxArrows)
         {
             GlobalData.currArrows = maxArrows;
         }
 
+        if(GlobalData.QuiverUpgrade == true)
+        {
+            GlobalData.maxArrows += 3;
+            GlobalData.currArrows += 3;
+            GlobalData.QuiverUpgrade = false;
+        }
+
         if(arrows < 10)
         {
-            arrowNum.text = "0" + arrows;
+            arrowNum.text = "0" + GlobalData.currArrows;
         }
         else
         {
-            arrowNum.text = "" + arrows;
+            arrowNum.text = "" + GlobalData.currArrows;
         }
 
-        if(arrows == 0)
+        if(GlobalData.currArrows == 0)
         {
             canUseBow = false;
         }
-        else if(arrows > 0)
+        else if(GlobalData.currArrows > 0)
         {
             canUseBow = true;
         }

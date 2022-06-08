@@ -8,7 +8,11 @@ public class SceneSwitch : MonoBehaviour
     [SerializeField] KeyCode interactKey;
     [SerializeField] bool hasCollided = false;
     [SerializeField] string textLabel = "Hold F to exit level";
-    
+    public GameObject ExitNotice;
+
+    public float countDown;
+    bool startCountdown = false;
+
     void OnGUI()
         {
             if(hasCollided == true)
@@ -23,8 +27,6 @@ public class SceneSwitch : MonoBehaviour
         {
             hasCollided = true;
         }
-        
-        
     }
 
     void OnTriggerExit(Collider other)
@@ -35,20 +37,43 @@ public class SceneSwitch : MonoBehaviour
         }
     }
 
-    /*
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        countDown = 5f;
     }
-    */
+    
     // Update is called once per frame
     
     void Update()
     {
         if(Input.GetKeyDown(interactKey) && hasCollided)
         {
-            SceneManager.LoadScene("OpenWorld1");
+            if(GlobalData.TutorialKeys == true)
+            {
+                GlobalData.TutorialKeys = false;
+                SceneManager.LoadScene("OpenWorld1");
+            }
+            else if(GlobalData.TutorialKeys == false)
+            {
+
+                startCountdown = true;
+                ExitNotice.SetActive(true);
+            }
+            
+        }
+
+        if(startCountdown == true)
+        {
+            countDown -= Time.deltaTime;
+        }
+
+        if(countDown <= 0)
+        {
+            startCountdown = false;
+            countDown = 5f;
+            ExitNotice.SetActive(false);
         }
     }
     
