@@ -7,25 +7,19 @@ public class SceneSwitch : MonoBehaviour
 {
     [SerializeField] KeyCode interactKey;
     [SerializeField] bool hasCollided = false;
-    [SerializeField] string textLabel = "Hold F to exit level";
     public GameObject ExitNotice;
+    public GameObject canLeaveText;
 
     public float countDown;
     bool startCountdown = false;
 
-    void OnGUI()
-        {
-            if(hasCollided == true)
-            {
-                GUI.Box(new Rect(50, Screen.height - 50, Screen.width - 150, 120), (textLabel));
-            }
-        }
 
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
             hasCollided = true;
+            canLeaveText.SetActive(true);
         }
     }
 
@@ -34,6 +28,7 @@ public class SceneSwitch : MonoBehaviour
         if(other.tag == "Player")
         {
             hasCollided = false;
+            canLeaveText.SetActive(false);
         }
     }
 
@@ -53,6 +48,7 @@ public class SceneSwitch : MonoBehaviour
             if(GlobalData.TutorialKeys == true)
             {
                 GlobalData.TutorialKeys = false;
+                canLeaveText.SetActive(false);
                 SceneManager.LoadScene("OpenWorld1");
             }
             else if(GlobalData.TutorialKeys == false)
