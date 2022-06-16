@@ -11,7 +11,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("TutorialScene");
     }
 
-    
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     void Start()
     {
         Cursor.visible = true;
